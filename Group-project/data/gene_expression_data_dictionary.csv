@@ -1,0 +1,5 @@
+Variable,Type,Description,Example Values,Notes
+Gene,Categorical (Text),Gene identifier or probe ID from the microarray,"BRCA1, TP53, 201746_at",Each unique ID represents expression of one gene. Probe IDs (like 201746_at) are microarray-specific identifiers.
+Sample,Categorical (Text),GEO sample accession number (GSM number),"GSM397506, GSM397507",Each GSM represents RNA from one patient tissue sample
+Sample_Type,Categorical (Text),Tissue classification: Cancer (tumor) or Normal (healthy),"Cancer, Normal",Extracted from GEO metadata. Compare expression between these groups.
+Expression,Continuous (Numeric),Normalized gene expression level,"7.5, 10.2, 4.8",Log2-transformed and normalized intensity. Higher values = more gene expression.
